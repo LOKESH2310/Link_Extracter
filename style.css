@@ -1,0 +1,14 @@
+body{background-color: #fcba03;
+text-align: center;
+}
+
+input[type="text"]{padding:10px 120px }
+input[type="submit"]{padding:20px 50px}
+
+.center{
+width:320px;
+padding:10px;
+border: 5px solid gray;
+margin:0;
+margin-left:35%;
+}

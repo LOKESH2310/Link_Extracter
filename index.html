@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>link_Xtracter</title>
+    <link href="{{url_for( 'static' , filename = 'css/style.css')}}" rel = "stylesheet">
+</head>
+<body>
+    <h1>L i n k_X t r a c t e r</h1>
+    <form method="POST" action="" >
+      <p><input type="text" name="text"></P>
+      <p><input type="submit" value="E x t r a c t" ></p>
+    </form>
+    <div class="center">
+    {% if links %}
+        <h3>links:</h3>
+        {% for i in links %}
+            <ul><a href={{links[i]}} target="_blank">{{i}}</a><br></ul>
+        {% endfor %}
+
+    {% endif %}
+    </div>
+</body>
+</html>
